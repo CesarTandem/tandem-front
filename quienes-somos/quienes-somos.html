@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>TANDEM - Quiénes Somos</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roca+One&display=swap" rel="stylesheet">
+    
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="../shared/base.css">
+    <link rel="stylesheet" href="../shared/navbar.css">
+    
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="quienes-somos.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR MÓVIL ========== -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="mobile-menu-overlay" onclick="toggleMenu()"></div>
+
+    <nav class="mobile-menu">
+        <div class="mobile-menu-section">
+            <h3 class="mobile-menu-title">Programas</h3>
+            <button class="mobile-menu-btn" onclick="navegarA('infancia')">INFANCIA</button>
+            <button class="mobile-menu-btn" onclick="navegarA('juventud')">JUVENTUD</button>
+            <button class="mobile-menu-btn" onclick="navegarA('mayores')">MAYORES</button>
+            <button class="mobile-menu-btn" onclick="navegarA('contacto')">CONTACTO</button>
+        </div>
+        
+        <div class="mobile-menu-section">
+            <h3 class="mobile-menu-title">Información</h3>
+            <button class="mobile-menu-btn outline" onclick="navegarA('nosotros')">NOSOTROS</button>
+            <button class="mobile-menu-btn outline" onclick="navegarA('cookies')">COOKIES</button>
+            <button class="mobile-menu-btn outline" onclick="navegarA('canal-etico')">CANAL ÉTICO</button>
+            <button class="mobile-menu-btn outline staff" onclick="navegarA('staff')">STAFF</button>
+        </div>
+    </nav>
+
+    <!-- ========== NAVBAR DESKTOP TOP ========== -->
+    <nav class="nav-top">
+        <button class="nav-btn" onclick="navegarA('infancia')">INFANCIA</button>
+        <button class="nav-btn" onclick="navegarA('juventud')">JUVENTUD</button>
+        <button class="nav-btn" onclick="navegarA('mayores')">MAYORES</button>
+        <button class="nav-btn" onclick="navegarA('contacto')">CONTACTO</button>
+    </nav>
+
+    <!-- ========== CONTENIDO PRINCIPAL ========== -->
+    <main class="container">
+        <!-- Content -->
+        <div class="content-container">
+            <h1 class="main-title">Quiénes somos</h1>
+            <p class="subtitle">El valor de la experiencia</p>
+            
+            <p class="description">
+                Llevamos más de <span class="highlight-bold">25 años</span> creando proyectos para infancia, juventud y mayores, es el momento de <span class="highlight-bold">renovar</span> la forma de <span class="highlight-bold">gestión</span>...
+            </p>
+            
+            <p class="cta-text">
+                <span class="highlight" onclick="irAContacto()">Escríbenos</span> para empezar a <span class="bold">trabajar juntos</span>!!
+            </p>
+        </div>
+
+        <!-- Splash Image -->
+        <div class="splash-container">
+            <img src="https://res.cloudinary.com/dstcnsu6a/image/upload/v1763140904/COT_C_Arturo_Mora_24571149.pdf_1_ljazj0.png" 
+                 alt="Splash colorido TANDEM" 
+                 class="splash-image"
+                 loading="eager"
+                 decoding="async">
+        </div>
+    </main>
+
+    <!-- ========== NAVBAR DESKTOP BOTTOM ========== -->
+    <nav class="nav-bottom">
+        <button class="nav-bottom-btn" onclick="navegarA('nosotros')">NOSOTROS</button>
+        <button class="nav-bottom-btn" onclick="navegarA('cookies')">COOKIES</button>
+        <button class="nav-bottom-btn" onclick="navegarA('canal-etico')">CANAL ÉTICO</button>
+        <button class="nav-bottom-btn staff" onclick="navegarA('staff')">STAFF</button>
+    </nav>
+
+    <!-- ========== SCRIPTS ========== -->
+    <!-- Shared JS (primero) -->
+    <script src="../shared/navbar.js"></script>
+    
+    <!-- Page JS -->
+    <script src="quienes-somos.js"></script>
+
+</body>
+</html>
