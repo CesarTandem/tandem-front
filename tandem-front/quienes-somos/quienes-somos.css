@@ -1,0 +1,333 @@
+/* =============================================
+   QUIÉNES SOMOS - CSS
+   Estilos específicos de la página
+   ============================================= */
+
+/* === CONTENEDOR PRINCIPAL === */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0 80px;
+    position: relative;
+}
+
+/* === CONTENIDO (lado izquierdo) === */
+.content-container {
+    flex: 0 0 45%;
+    padding-right: 60px;
+}
+
+.main-title {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    color: #6B5B95;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtitle {
+    font-size: 28px;
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 400;
+    color: #4A90E2;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description .highlight {
+    font-weight: 700;
+    color: #4A90E2;
+}
+
+.description .highlight-bold {
+    font-weight: 800;
+    color: #4A90E2;
+}
+
+.cta-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #4A90E2;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cta-text .bold {
+    font-weight: 800;
+}
+
+.cta-text .highlight {
+    font-weight: 700;
+    color: #4A90E2;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.cta-text .highlight:hover {
+    color: #357ABD;
+}
+
+/* === SPLASH (lado derecho) === */
+.splash-container {
+    flex: 0 0 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.splash-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    position: relative;
+    display: block;
+    object-fit: contain;
+}
+
+/* === RESPONSIVE === */
+
+/* 1200px */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .main-title {
+        font-size: 70px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .cta-text {
+        font-size: 18px;
+    }
+
+    .content-container {
+        padding-right: 40px;
+    }
+}
+
+/* 968px - Tablets */
+@media (max-width: 968px) {
+    .container {
+        flex-direction: column;
+        padding: 100px 30px 60px;
+        justify-content: center;
+    }
+
+    .content-container {
+        flex: 0 0 auto;
+        padding-right: 0;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 40px;
+        order: 1;
+    }
+
+    .splash-container {
+        flex: 0 0 auto;
+        width: 100%;
+        justify-content: center;
+        order: 2;
+    }
+
+    .main-title {
+        font-size: 60px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+
+    .cta-text {
+        font-size: 17px;
+    }
+
+    .splash-image {
+        max-width: 500px;
+    }
+}
+
+/* 768px - Mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 90px 25px 50px;
+    }
+
+    .main-title {
+        font-size: 50px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .cta-text {
+        font-size: 16px;
+        margin-top: 25px;
+    }
+
+    .splash-image {
+        max-width: 450px;
+    }
+}
+
+/* 640px */
+@media (max-width: 640px) {
+    .container {
+        padding: 80px 20px 40px;
+    }
+
+    .main-title {
+        font-size: 42px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .cta-text {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .splash-image {
+        max-width: 380px;
+    }
+}
+
+/* 480px - Small phones */
+@media (max-width: 480px) {
+    .container {
+        padding: 70px 15px 35px;
+    }
+
+    .main-title {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .cta-text {
+        font-size: 14px;
+        margin-top: 18px;
+    }
+
+    .splash-image {
+        max-width: 320px;
+    }
+}
+
+/* 375px - iPhone SE */
+@media (max-width: 375px) {
+    .container {
+        padding: 60px 12px 30px;
+    }
+
+    .main-title {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .cta-text {
+        font-size: 13px;
+        margin-top: 15px;
+    }
+
+    .splash-image {
+        max-width: 280px;
+    }
+}
+
+/* Landscape mobile */
+@media (max-width: 968px) and (orientation: landscape) {
+    .container {
+        flex-direction: row;
+        padding: 20px 30px;
+        min-height: 100vh;
+    }
+
+    .content-container {
+        flex: 0 0 50%;
+        padding-right: 30px;
+        margin-bottom: 0;
+        order: 1;
+    }
+
+    .splash-container {
+        flex: 0 0 45%;
+        justify-content: flex-end;
+        order: 2;
+    }
+
+    .main-title {
+        font-size: 42px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .cta-text {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .splash-image {
+        max-width: 400px;
+    }
+}
