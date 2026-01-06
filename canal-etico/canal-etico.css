@@ -1,0 +1,309 @@
+/* =============================================
+   CANAL ÉTICO - CSS
+   Estilos específicos de la página
+   ============================================= */
+
+/* === CONTENEDOR PRINCIPAL === */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 60px 40px;
+    position: relative;
+}
+
+/* === TÍTULOS === */
+.main-title {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #6B5B95;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* === CONTENIDO === */
+.content-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4A90E2;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-text .bold {
+    font-weight: 700;
+}
+
+.content-text .bold-upper {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* === PRINCIPIOS === */
+.principles-intro {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4A90E2;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.principles-list {
+    margin-bottom: 25px;
+    padding-left: 0;
+}
+
+.principle-item {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4A90E2;
+    line-height: 1.8;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.principle-item::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+}
+
+.principle-item .bold {
+    font-weight: 700;
+}
+
+/* === EMAIL LINK === */
+.email-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4A90E2;
+    text-align: center;
+    display: block;
+    margin: 40px 0;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.email-link:hover {
+    opacity: 0.8;
+}
+
+/* === SPLASH === */
+.splash-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.splash-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* === RESPONSIVE === */
+
+/* 968px - Tablets */
+@media (max-width: 968px) {
+    .container {
+        padding: 100px 40px 30px;
+    }
+
+    .main-title {
+        font-size: 60px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+
+    .content-text {
+        font-size: 15px;
+    }
+
+    .principles-intro {
+        font-size: 15px;
+    }
+
+    .principle-item {
+        font-size: 15px;
+    }
+
+    .email-link {
+        font-size: 17px;
+    }
+
+    .splash-image {
+        max-width: 500px;
+    }
+}
+
+/* 768px - Mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 90px 30px 25px;
+    }
+
+    .main-title {
+        font-size: 52px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+
+    .content-text {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .principles-intro {
+        font-size: 14px;
+    }
+
+    .principle-item {
+        font-size: 14px;
+    }
+
+    .email-link {
+        font-size: 16px;
+        margin: 35px 0;
+    }
+
+    .splash-image {
+        max-width: 450px;
+    }
+}
+
+/* 640px */
+@media (max-width: 640px) {
+    .container {
+        padding: 80px 25px 20px;
+    }
+
+    .main-title {
+        font-size: 44px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .content-text {
+        font-size: 13px;
+    }
+
+    .principles-intro {
+        font-size: 13px;
+    }
+
+    .principle-item {
+        font-size: 13px;
+    }
+
+    .email-link {
+        font-size: 15px;
+        margin: 30px 0;
+    }
+
+    .splash-image {
+        max-width: 380px;
+    }
+}
+
+/* 480px - Small phones */
+@media (max-width: 480px) {
+    .container {
+        padding: 70px 20px 18px;
+    }
+
+    .main-title {
+        font-size: 38px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .content-text {
+        font-size: 12px;
+    }
+
+    .principles-intro {
+        font-size: 12px;
+    }
+
+    .principle-item {
+        font-size: 12px;
+    }
+
+    .email-link {
+        font-size: 14px;
+        margin: 25px 0;
+    }
+
+    .splash-image {
+        max-width: 320px;
+    }
+}
+
+/* 375px - iPhone SE */
+@media (max-width: 375px) {
+    .container {
+        padding: 60px 15px 15px;
+    }
+
+    .main-title {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        margin-bottom: 22px;
+    }
+
+    .content-text {
+        font-size: 11px;
+    }
+
+    .principles-intro {
+        font-size: 11px;
+    }
+
+    .principle-item {
+        font-size: 11px;
+    }
+
+    .email-link {
+        font-size: 13px;
+        margin: 22px 0;
+    }
+
+    .splash-image {
+        max-width: 280px;
+    }
+}

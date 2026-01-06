@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>TANDEM - Canal Ético</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roca+One&display=swap" rel="stylesheet">
+    
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="../shared/base.css">
+    <link rel="stylesheet" href="../shared/navbar.css">
+    
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="canal-etico.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR MÓVIL ========== -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="mobile-menu-overlay" onclick="toggleMenu()"></div>
+
+    <nav class="mobile-menu">
+        <div class="mobile-menu-section">
+            <h3 class="mobile-menu-title">Programas</h3>
+            <button class="mobile-menu-btn" onclick="navegarA('infancia')">INFANCIA</button>
+            <button class="mobile-menu-btn" onclick="navegarA('juventud')">JUVENTUD</button>
+            <button class="mobile-menu-btn" onclick="navegarA('mayores')">MAYORES</button>
+            <button class="mobile-menu-btn" onclick="navegarA('contacto')">CONTACTO</button>
+        </div>
+        
+        <div class="mobile-menu-section">
+            <h3 class="mobile-menu-title">Información</h3>
+            <button class="mobile-menu-btn outline" onclick="navegarA('nosotros')">NOSOTROS</button>
+            <button class="mobile-menu-btn outline" onclick="navegarA('cookies')">COOKIES</button>
+            <button class="mobile-menu-btn outline" onclick="navegarA('canal-etico')">CANAL ÉTICO</button>
+            <button class="mobile-menu-btn outline staff" onclick="navegarA('staff')">STAFF</button>
+        </div>
+    </nav>
+
+    <!-- ========== NAVBAR DESKTOP TOP ========== -->
+    <nav class="nav-top">
+        <button class="nav-btn" onclick="navegarA('infancia')">INFANCIA</button>
+        <button class="nav-btn" onclick="navegarA('juventud')">JUVENTUD</button>
+        <button class="nav-btn" onclick="navegarA('mayores')">MAYORES</button>
+        <button class="nav-btn" onclick="navegarA('contacto')">CONTACTO</button>
+    </nav>
+
+    <!-- ========== CONTENIDO PRINCIPAL ========== -->
+    <main class="container">
+        <h1 class="main-title">Canal Ético</h1>
+        <p class="subtitle">Nos tomamos muy en serio nuestro trabajo</p>
+        
+        <p class="content-text">
+            Este Canal es el sistema interno de información que <span class="bold-upper">Turismo Activo en la Naturaleza y Deportes de Montaña, S.L.</span> (TANDEM) pone a disposición para que cualquier persona pueda poner en conocimiento del Órgano de Administración posibles irregularidades, incumplimientos o comportamientos producidos en el marco de las actividades de <span class="bold">TANDEM</span> y contrarios al marco legal vigente, al Código de Conducta y/o a los valores éticos de la empresa.
+        </p>
+
+        <p class="principles-intro">
+            La gestión del <span class="bold">Canal Ético</span> se fundamenta en los siguientes principios esenciales:
+        </p>
+
+        <div class="principles-list">
+            <div class="principle-item">
+                <span class="bold">Garantía</span> de confidencialidad de las comunicaciones realizadas.
+            </div>
+            <div class="principle-item">
+                <span class="bold">Respeto</span> al anonimato de aquellas personas que no deseen ser identificadas.
+            </div>
+            <div class="principle-item">
+                <span class="bold">Imparcialidad</span> y objetividad en la evaluación de los casos.
+            </div>
+            <div class="principle-item">
+                Respeto a los <span class="bold">derechos</span> de todas las partes involucradas en la gestión de los expedientes.
+            </div>
+            <div class="principle-item">
+                Ausencia de represalias hacia los informantes que realicen comunicaciones de <span class="bold">buena fe</span>.
+            </div>
+        </div>
+
+        <p class="content-text">
+            Están terminantemente prohibidas las comunicaciones realizadas a sabiendas de su falsedad o con temerario desprecio hacia la verdad, así como aquellas referidas a informaciones obtenidas de manera ilícita. La protección al informante no será aplicable en estos casos y el informante estará sujeto a sanción disciplinaria y, en su caso, a las responsabilidades administrativas, penales y/o civiles previstas en las normas aplicables.
+        </p>
+
+        <p class="content-text">
+            El <span class="bold">Canal Ético</span> NO es un servicio de emergencia. No se debe utilizar este sitio para denunciar hechos que representen un riesgo inminente para la vida o la propiedad.
+        </p>
+
+        <a href="mailto:canaletico@grupotandem.es" class="email-link">
+            canaletico@grupotandem.es
+        </a>
+
+        <div class="splash-container">
+            <img src="https://res.cloudinary.com/dstcnsu6a/image/upload/v1763140904/COT_C_Arturo_Mora_24571149.pdf_1_ljazj0.png" 
+                 alt="Splash colorido TANDEM" 
+                 class="splash-image"
+                 loading="lazy"
+                 decoding="async">
+        </div>
+    </main>
+
+    <!-- ========== NAVBAR DESKTOP BOTTOM ========== -->
+    <nav class="nav-bottom">
+        <button class="nav-bottom-btn" onclick="navegarA('nosotros')">NOSOTROS</button>
+        <button class="nav-bottom-btn" onclick="navegarA('cookies')">COOKIES</button>
+        <button class="nav-bottom-btn" onclick="navegarA('canal-etico')">CANAL ÉTICO</button>
+        <button class="nav-bottom-btn staff" onclick="navegarA('staff')">STAFF</button>
+    </nav>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="../shared/navbar.js"></script>
+    <script src="canal-etico.js"></script>
+
+</body>
+</html>
